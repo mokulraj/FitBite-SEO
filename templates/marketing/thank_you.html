@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Thanks for Your FitBite Request | FitBite{% endblock %}
+{% block meta_description %}Thank you for joining the FitBite first-meal campaign demo. Explore healthy living content and the campaign journey.{% endblock %}
+{% block content %}
+<section class="page-hero text-center">
+  <div class="container narrow">
+    <span class="eyebrow">REQUEST RECEIVED</span>
+    <h1>Thanks — your FitBite request is in.</h1>
+    <p class="lead text-secondary">Your information was validated and stored in the demo lead database. No real discount is issued and no real marketing campaign is running.</p>
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+      <a class="btn btn-primary btn-lg rounded-pill px-4" href="{% url 'blog' %}">Explore Healthy Living</a>
+      <a class="btn btn-outline-dark btn-lg rounded-pill px-4" href="{% url 'home' %}">Back to Home</a>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4"><div class="feature h-100"><div class="icon">✓</div><h3>Lead captured</h3><p>Your form data was validated and stored for the portfolio campaign.</p></div></div>
+      <div class="col-md-4"><div class="feature h-100"><div class="icon">✉</div><h3>Email journey</h3><p>The next conceptual step is the welcome → education → promotion sequence.</p></div></div>
+      <div class="col-md-4"><div class="feature h-100"><div class="icon">↗</div><h3>Next action</h3><p>Use the content and campaign pages to continue the customer journey.</p></div></div>
+    </div>
+  </div>
+</section>
+{% endblock %}
